@@ -1,0 +1,39 @@
+.main-header {
+  position: absolute;
+}
+
+.main-header__menu-toggle {
+  width: 30px;
+  height: 20px;
+  margin-top: 30px;
+  margin-left: 32px;
+  background-image: url("../img/icon/menu-burger.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-header--menu-opened {
+  @media (max-width: ($desktop-width - 1)) {
+    background-color: #ffffff;
+  }
+}
+
+.main-header--menu-opened .main-navigation {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.main-header--menu-opened .main-header__menu-toggle {
+  z-index: 1;
+  height: 22px;
+  background-image: url("../img/icon/menu-close.svg");
+}
