@@ -1,0 +1,40 @@
+.main-container {
+  margin: 0 auto;
+}
+
+.main-container--border-top {
+  @media (max-width: ($tablet-width - 1)) {
+    border-top: 1px solid $color-grey-700;
+  }
+}
+
+.main-container__title {
+  padding: 27px 20px 37px;
+  line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 70px 54px;
+    line-height: 60px;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 56px;
+    line-height: 60px;
+  }
+}
+
+.main-container__text {
+  padding: 0 20px 39px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px 66px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 66px;
+  }
+}
