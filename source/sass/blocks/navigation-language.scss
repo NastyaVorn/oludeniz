@@ -3,7 +3,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  padding-top: 28px;
+  padding-top: 42px;
   list-style: none;
 
   @media (min-width: $desktop-width) {
@@ -42,15 +42,16 @@
     content: "";
     position: absolute;
     right: 14px;
-    bottom: 10px;
+    bottom: 1px;
     left: 14px;
-    height: 2px;
+    height: 1px;
     background: $color-black;
   }
 
   @media (min-width: $desktop-width) {
     &::after {
       height: 1px;
+      bottom: 10px;
       background: $color-white;
     }
   }
