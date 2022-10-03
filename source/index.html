@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>Oludeniz</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="/Ubuntumedium.woff2" as="font">
     <link rel="preload" href="/fonts/Ubunturegular.woff2" as="font">
@@ -24,7 +24,7 @@
             <a class="navigation-list__link">Главная</a>
           </li>
           <li class="navigation-list__item">
-            <a class="navigation-list__link" href="catalog.html">О курорте</a>
+            <a class="navigation-list__link" href="about.html">О курорте</a>
           </li>
           <li class="navigation-list__item">
             <a class="navigation-list__link" href="form.html">Места</a>
@@ -41,10 +41,10 @@
         </ul>
         <ul class="main-navigation__list navigation-language">
           <li class="navigation-language__item">
-            <a class="navigation-language__button">EN</a>
+            <a class="navigation-language__button" href="#">EN</a>
           </li>
           <li class="navigation-language__item navigation-language__item--active">
-            <a class="navigation-language__button">RU</a>
+            <a class="navigation-language__button" href="#">RU</a>
           </li>
         </ul>
       </nav>
@@ -53,143 +53,117 @@
       <div class="intro">
         <h1 class="intro__title">Ölüdeniz</h1>
       </div>
-      <section class="about container">
+      <section class="about">
         <h2 class="about__title">Oludeniz</h2>
         <div class="about__description">
           <p class="about__text">Небольшой курорт Олюдениз расположен на берегу, где встречаются Эгейское и Средиземное моря. С трёх сторон он окружен горами, самая высокая из которых — Бабадаг.</p>
           <p class="about__text">Олюдениз — известен как одно из самых красивых мест в Турции, благодаря Голубой Лагуне, объявленной национальным парком.</p>
-          <button class="about__button button">
+          <a class="about__button button" href="#">
             <span class="button__text">Подробнее</span>
-          </button>
+          </a>
         </div>
         <img class="about__picture-img" src="img/oludeniz-resort.jpg" alt="Пляж Олюдениз">
       </section>
-      <section class="places card">
-        <h2 class="places__title">Места</h2>
-        <p class="places__counter">01-08</p>
-        <div class="places__description">
-          <img class="places__picture-img" src="img/kelebekler.jpg" alt="Пляж Олюдениз">
-          <h3 class="places__title">Kelebekler Vadisi</h3>
-          <p class="places__text">Долина Бабочек — совершенное прекрасное дикое место на Бирюзовом побережье</p>
-          <button class="places__button button">
-            <span class="button__text">Подробнее</span>
-          </button>
+      <section class="gallery container">
+        <div class="gallery__header">
+          <h2 class="gallery__title">Места</h2>
+          <p class="gallery__counter">01-08</p>
         </div>
-      </section>
-      <!-- <section class="example">
-        <div class="example__description container">
-          <h2 class="example__title main-font main-font--l">Живой пример</h2>
-          <p class="example__text sub-font sub-font--m">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__wrapper">
-            <dl class="example__result">
-              <div class="example__result-item">
-                <dt class="example__result-title">Cнижение веса</dt>
-                <dd class="example__result-data">5 КГ</dd>
-              </div>
-              <div class="example__result-item">
-                <dt class="example__result-title">Затрачено времени</dt>
-                <dd class="example__result-data">60 ДНЕЙ</dd>
-              </div>
-            </dl>
-            <p class="example__outlay">
-              <span class="example__text-price main-font main-font--xs">Затраты на питание: </span>
-              <span class="example__price main-font main-font--xs">15 000 РУБ.</span>
-            </p>
-          </div>
-          <div class="example__compare compare">
-            <div class="compare__container">
-              <div class="compare__pictures-container">
-                <div class="compare__picture compare__picture--before">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/cat-before-mobile.webp 1x, img/cat-before-mobile@2x.webp 2x">
-                    <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
-                    <img class="compare__picture-img" src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" alt="Пухлый кот">
-                  </picture>
-                </div>
-                <div class="compare__picture compare__picture--after">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/cat-after-mobile.webp 1x, img/cat-after-mobile@2x.webp 2x">
-                    <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
-                    <img class="compare__picture-img" src="img/cat-after-mobile.png" srcset="img/cat-after-mobile@2x.png 2x" alt="Худой кот">
-                  </picture>
-                </div>
-              </div>
-              <div class="compare__controls-container">
-                <button class="compare__control compare__control--before" type="button">
-                  <span class="compare__control-text">Было</span>
-                </button>
-                <div class="compare__control-slider compare__control-slider--before">
-                  <div class="compare__control-slider-mark">
-                    <span class="visually-hidden">Элемент слайдера для переключения</span>
-                  </div>
-                </div>
-                <button class="compare__control compare__control--after" type="button">
-                  <span class="compare__control-text">Стало</span>
-                </button>
-              </div>
+        <div class="gallery__description">
+          <button class="gallery__control gallery__control--left" type="button"></button>
+          <button class="gallery__control gallery__control--right" type="button"></button>
+          <div class="gallery__picture">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/kelebekler.jpg 1x, img/kelebekler.jpg 2x">
+              <img class="gallery__picture-img" src="img/kelebekler-mobile.jpg" alt="Пляж долины бабочек">
+            </picture>
+            <div class="gallery__wrapper">
+              <h3 class="gallery__subtitle">Kelebekler Vadisi</h3>
+              <p class="gallery__text">Долина Бабочек — совершенное прекрасное дикое место на Бирюзовом побережье</p>
+              <a class="gallery__button button" href="#">
+                <span class="gallery__button-text">Подробнее</span>
+              </a>
             </div>
           </div>
         </div>
       </section>
-    </main>
-    <footer class="main-footer">
-      <section class="main-footer__cooperation">
-        <div class="main-footer__cooperation-wrapper">
-          <h2 class="main-footer__title main-font main-font--s">Приглашаем <br>к сотрудничеству дилеров!</h2>
-          <address class="main-footer__address sub-font sub-font--m">ул. Большая Конюшенная, д. 19/8 <span class="main-footer__address-city">Санкт-Петербург</span></address>
+      <section class="paragliding">
+        <img class="paragliding__picture-img" src="img/paragliding.jpg" alt="Параглайдеры в небе">
+        <div class="paragliding__title">
+          <a class="paragliding__button button--title" href="#">Параглайдинг</a>
         </div>
       </section>
-      <div class="main-footer__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300288!2d30.320858715847486!3d59.938719169054544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650308596989!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <section class="main-footer__contacts contacts">
-        <div class="contacts__container container">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <a class="contacts__logo-text" href="index.html">
-            <svg width="129" height="25">
-              <use href="./img/icon/sprite/sprite.svg#logo-text"></use>
-            </svg>
-            <span class="visually-hidden">Кэт энерджи</span>
-          </a>
-          <ul class="contacts__social-list">
-            <li class="contacts__social-item">
-              <a class="contacts__social-link contacts__social-link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg class="contacts__social-icon" width="28" height="22" fill="#666666">
-                  <use href="./img/icon/sprite/sprite.svg#icon-vk"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Вконтакте</span>
+      <section class="gallery container">
+        <div class="gallery__header">
+          <h2 class="gallery__title">Отели</h2>
+          <p class="gallery__counter">01-06</p>
+        </div>
+        <div class="gallery__description">
+          <button class="gallery__control gallery__control--left" type="button"></button>
+          <button class="gallery__control gallery__control--right" type="button"></button>
+          <div class="gallery__picture">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/oludeniz-jade-residence.jpg 1x, img/oludeniz-jade-residence.jpg 2x">
+              <img class="gallery__picture-img" src="img/oludeniz-jade-residence-mobile.png" alt="Отель jade-residence">
+            </picture>
+            <div class="gallery__wrapper">
+              <h3 class="gallery__subtitle">Oludeniz Jade residence</h3>
+              <p class="gallery__text">Отель Jade Residence расположен в тропическом саду возрастом 250 лет и в 50 метрах от пляжа </p>
+              <a class="gallery__button button" href="#">
+                <span class="gallery__button-text">Подробнее</span>
               </a>
-            </li>
-            <li class="contacts__social-item">
-              <a class="contacts__social-link contacts__social-link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <svg class="contacts__social-icon" width="28" height="22" fill="#666666">
-                  <use href="./img/icon/sprite/sprite.svg#icon-youtube"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Ютубе</span>
-              </a>
-            </li>
-            <li class="contacts__social-item">
-              <a class="contacts__social-link contacts__social-link--telegram" href="https://t.me/htmlacademy">
-                <svg class="contacts__social-icon" width="28" height="22" fill="#666666">
-                  <use href="./img/icon/sprite/sprite.svg#icon-telegram"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Телеграме</span>
-              </a>
-            </li>
-          </ul>
-          <div class="contacts__copyright">
-            <a class="contacts__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="contacts__copyright-name">HTML Academy</span>
-              <svg class="contacts__copyright-icon" width="27" height="34" fill="#666666">
-                <use href="./img/icon/sprite/sprite.svg#icon-html"></use>
-              </svg>
-            </a>
+            </div>
           </div>
         </div>
       </section>
-    </footer> -->
+      <section class="restaurants container">
+        <h2 class="restaurants__title">Рестораны</h2>
+        <div class="restaurants__list-wrapper">
+          <ul class="restaurants__list">
+            <button class="restaurants__control restaurants__control--left" type="button"></button>
+            <button class="restaurants__control restaurants__control--right" type="button"></button>
+            <li class="restaurants__card">
+              <img class="restaurants__img" src="img/1700-grillbar.jpg" alt="Вид на ресторан 1700 гриль-бар">
+              <a class="restaurants__button button--title" href="#">1700<br>Grill & Bar</a>
+            </li>
+            <li class="restaurants__card hidemobile">
+              <img class="restaurants__img" src="img/buzz-beach-bar.jpg" alt="Ресторан buzz beach">
+              <a class="restaurants__button button--title" href="#">Buzz Beach Bar</a>
+            </li>
+            <li class="restaurants__card hidemobile">
+              <img class="restaurants__img" src="img/jade-terrace.jpg" alt="Ресторан jade terrace">
+              <a class="restaurants__button button--title" href="#">Jade terrace</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p class="main-footer__title">Ölüdeniz</p>
+      <nav class="main-footer__navigation footer-navigation">
+        <ul class="footer-navigation__list">
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="about.html">О курорте</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="form.html">Места</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="form.html">Параглайдинг</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="form.html">Отели</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="form.html">Рестораны</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="main-footer__copyright">2020 © Все права защищены.</p>
+    </footer>
     <script src="js/script.min.js"></script>
   </body>
 </html>

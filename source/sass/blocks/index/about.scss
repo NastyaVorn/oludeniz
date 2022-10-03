@@ -5,12 +5,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    padding: 56px 30px 47px;
-    border-bottom: 1px solid $color-grey-600;
+    padding: 56px 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 175px 0 110px;
+    padding: 175px 0 110px 185px;
     border-bottom: none;
   }
 }
@@ -34,6 +33,7 @@
   @media (min-width: $tablet-width) {
     order: 1;
     justify-content: center;
+    padding-top: 72px;
     padding-left: 36px;
   }
 
@@ -59,14 +59,16 @@
 
   @media (min-width: $tablet-width) {
     justify-content: center;
-    padding-top: 42px;
+    padding-top: 72px;
     width: 40%;
     height: 40%;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 60px;
+    padding-left: 27px;
     width: 35%;
+    height: 580px;
   }
 }
 
@@ -74,5 +76,9 @@
   @media (min-width: $desktop-width) {
     padding-top: 60px;
     font-size: 13px;
+  }
+
+  &:hover {
+    opacity: 60%;
   }
 }

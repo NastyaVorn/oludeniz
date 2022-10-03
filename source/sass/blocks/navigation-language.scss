@@ -14,17 +14,24 @@
 }
 
 .navigation-language__button {
-  padding: 14px;
+  padding: 15px;
   font-family: $font-tenor;
   font-size: 16px;
   font-weight: 400;
   border: 0;
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 14px;
     font-size: 14px;
     line-height: 21px;
     color: $color-white;
+  }
+
+  &:hover {
+    opacity: 60%;
   }
 }
 
@@ -35,7 +42,7 @@
     content: "";
     position: absolute;
     right: 14px;
-    bottom: 1px;
+    bottom: 10px;
     left: 14px;
     height: 2px;
     background: $color-black;
@@ -45,7 +52,6 @@
     &::after {
       height: 1px;
       background: $color-white;
-      // border-bottom: 1px solid $color-white;
     }
   }
 }

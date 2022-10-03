@@ -1,0 +1,36 @@
+.accession {
+  display: flex;
+  flex-direction: column;
+  padding: 72px 0 36px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: center;
+    padding: 175px 185px 110px;
+  }
+}
+
+.accession__text {
+  margin: 0;
+  padding: 0 40px 72px 32px;
+  font-weight: 500;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 0 228px 75px 96px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 100px 0 0;
+  }
+}
+
+.accession__img {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    padding: 104px 0 0 175px;
+    width: 666px;
+    height: 445px;
+  }
+}

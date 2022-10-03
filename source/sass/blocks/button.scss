@@ -37,6 +37,7 @@
   // }
 
   @media (min-width: $tablet-width) {
+    width: auto;
     font-size: 16px;
     line-height: 20px;
   }
@@ -46,4 +47,11 @@
   position: absolute;
   padding-bottom: 6px;
   border-bottom: 2px solid $color-black;
+}
+
+.button--title {
+  font-family: $font-tenor;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: $color-white;
 }

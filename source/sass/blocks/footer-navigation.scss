@@ -1,0 +1,38 @@
+.footer-navigation {
+  list-style: none;
+}
+
+.footer-navigation__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-auto-flow: column;
+    grid-template-columns: auto;
+    grid-gap: 30px;
+  }
+}
+
+.footer-navigation__item {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.footer-navigation__link {
+  &:hover {
+    opacity: 60%;
+  }
+}
